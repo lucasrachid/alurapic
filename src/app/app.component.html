@@ -1,4 +1,6 @@
-<h1>{{this.title}}</h1>
-<img class="img-thumbnail" src="{{this.urlImage}}" alt="{{this.descriptionImage}}">
+<app-photo *ngFor="let photoDigimon of this.photos"
+           [urlImage]="photoDigimon.urlImage"
+           [descriptionImage]="photoDigimon.descriptionImage"
+           [title]="photoDigimon.title"></app-photo>
 
 

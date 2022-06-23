@@ -6,7 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'alurapic';
-  urlImage = 'assets/Img/digimon.jpg'
-  descriptionImage = 'Digimon Reboot';
+  photos: any = [
+    {
+      urlImage: 'assets/Img/digimon.jpg',
+      descriptionImage: 'Foto digimon',
+      title: 'Digi Escolhidos'
+    },
+    {
+      urlImage: 'assets/Img/digimon1.jpg',
+      descriptionImage: 'Foto digimon',
+      title: 'Digimon'
+    },
+    {
+      urlImage: 'assets/Img/digimon2.jpg',
+      descriptionImage: 'Foto digimon',
+      title: 'Digimon Adventure'
+    },
+  ]
 }
