@@ -1,6 +1,6 @@
-<app-photo *ngFor="let photoDigimon of this.photos"
-           [urlImage]="photoDigimon.urlImage"
-           [descriptionImage]="photoDigimon.descriptionImage"
-           [title]="photoDigimon.title"></app-photo>
+<app-photo *ngFor='let photo of photos'
+           [url]="photo?.url!"
+           [description]="photo?.description!">
+</app-photo>
 
 
